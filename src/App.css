@@ -36,3 +36,42 @@
     transform: rotate(360deg);
   }
 }
+
+table {
+  width: 100%;
+}
+
+th,
+tr,
+td {
+  width: auto;
+}
+
+table,
+th,
+td {
+  border: 1px solid #000;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th,
+td {
+  padding: 15px;
+}
+
+th {
+  font-size: 14px;
+  background-color: #ffbb00;
+  color: #0c0c0c;
+}
+
+tr:nth-child(even) {
+  background-color: #fff;
+  font-weight: 800;
+}
+
+tr:nth-child(odd) {
+  background-color: #eee;
+  font-weight: 800;
+}
