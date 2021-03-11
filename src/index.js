@@ -13,6 +13,8 @@ function JSXExercises ()
       <br />
       <RenderJSX />
       <TheLongWay />
+      <ValidIndicator />
+      <Greeting />
     </>
   );
 }
@@ -77,6 +79,33 @@ function TheLongWay ()
     }
     ` }</pre>,
     <hr />,
+  );
+}
+
+function ValidIndicator ()
+{
+  const isValid = true;
+  return (
+    <span>
+      {isValid ? 'valid' : 'not valid' }
+      <hr />
+    </span>
+  );
+}
+
+function Greeting ()
+{
+  // Try all of these variations
+  let username = "gunnerjnr";
+  //let username = undefined;
+  //let username = null;
+  //let username = false;
+
+  // Fill in the rest:
+  return (
+    <span>
+      {username ? 'Hello, ' + username : 'Not Logged In...'}
+    </span>
   );
 }
 
