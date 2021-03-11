@@ -48,7 +48,35 @@ function TheLongWay ()
     'span',
     {},
     <hr />,
-    'JSX Exercises - The Long Way'
+    <p>JSX Exercises - The Long Way</p>,
+    <p>Example of the above code in the backend:</p>,
+    <pre>{ `
+    function TheLongWay(),
+    {
+      return React.createElement(
+        'span',
+        {},
+        <hr />,
+        'JSX Exercises - The Long Way'
+      );
+    }
+    `}</pre>,
+    <p>We call this in our main function that we render to the dom like so:</p>,
+    <pre>{ `
+    function JSXExercises ()
+    {
+      return (
+        <>
+          <div>JSX Exercises</div>
+          <hr />
+          <br />
+          <RenderJSX />        // Renders our book club details
+          <TheLongWay />       // renders the above function example
+        </>
+      );
+    }
+    ` }</pre>,
+    <hr />,
   );
 }
 
